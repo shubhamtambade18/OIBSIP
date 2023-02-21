@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    min-height: 80vh;
+    background-color: #272727;
+}
+.container{
+    background-color: #fff;
+    color: #272727;
+    border-radius: 7px;
+    width: 35%;
+    height: 75vh;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.container form{
+    margin-top: 40px;
+    margin-right: 23px;
+    margin-bottom: 28px;
+}
+
+.container form .ib{
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.container form input, select{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input, label {
+    display: block;
+    padding: 5px;
+    border: none;
+}
+select{
+    font-size: 14px;
+    width: 110%;
+    cursor: pointer;
+    border: none;
+}
+input, select {
+    border-bottom: 1px solid #272727;
+}
+button{
+    display: block !important;
+    margin: 20px;
+    background-color: #272727;
+    color: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 17px;
+    cursor: pointer;
+}
+button:active {
+    transform: scale(0.95);
+}
+
+.container .result p{
+    display: flex;
+    position: relative;
+    margin: 5px;
+    font-size: 20px;
+}
+.container .result .res{
+    margin-left: 15px;
+    font-weight: bold;
+    font-size : 22px;
+}
+.container form .type select option{
+    background-color: #272727; 
+    color: #fff;
+}
+
+.msg{
+    top: 10%;
+    position: fixed;
+    color: #fff;
+    font-size: 17px;
+}
+
+@media (max-width : 900px) {
+    .container{
+        height: 50vh;
+    }
+}
